@@ -9,45 +9,45 @@ return {
       ts.setup()
 
       local langs = {
-	"bash",
-	"c",
-	"cmake",
-	"cpp",
-	"css",
-	"csv",
-	"diff",
-	"dockerfile",
-	"gitignore",
-	"go",
-	"html",
-	"javascript",
-	"json",
-	"lua",
-	"make",
-	"markdown",
-	"markdown_inline",
-	"mermaid",
-	"nginx",
-	"odin",
-	"proto",
-	"python",
-	"rust",
-	"toml",
-	"sql",
-	"tsx",
-	"typescript",
-	"xml",
-	"yaml",
-	"zsh",
+        "bash",
+        "c",
+        "cmake",
+        "cpp",
+        "css",
+        "csv",
+        "diff",
+        "dockerfile",
+        "gitignore",
+        "go",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "make",
+        "markdown",
+        "markdown_inline",
+        "mermaid",
+        "nginx",
+        "odin",
+        "proto",
+        "python",
+        "rust",
+        "toml",
+        "sql",
+        "tsx",
+        "typescript",
+        "xml",
+        "yaml",
+        "zsh",
       }
       ts.install(langs)
 
       vim.api.nvim_create_autocmd("FileType", {
-	pattern = langs,
-	callback = function()
-	  vim.treesitter.start()
-	end,
+        pattern = langs,
+        callback = function()
+          vim.treesitter.start()
+        end,
       })
-    end
-  }
+    end,
+  },
 }
